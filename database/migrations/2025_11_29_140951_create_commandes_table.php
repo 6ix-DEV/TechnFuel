@@ -13,7 +13,15 @@ return new class extends Migration
     {
         Schema::create('commandes', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('description')->nullable();
+            $table->decimal('total', 8, 2);
+            $table->string('statut')->default('en cours');
+            $table->timestamps('date_creation');
+            
+            //Clé étrangere vers la table Users
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            
         });
     }
 

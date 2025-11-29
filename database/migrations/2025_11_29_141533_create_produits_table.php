@@ -13,7 +13,17 @@ return new class extends Migration
     {
         Schema::create('produits', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->text('description')->nullable();
+            $table->decimal('prix', 8, 2);
+            $table->integer('quantité')->default(0);
+            $table->boolean('statut')->default(true);
             $table->timestamps();
+            
+            // Configuration de la clé étrangere de la table Category.
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+            
         });
     }
 
