@@ -12,7 +12,8 @@ class ProduitController extends Controller
      */
     public function index()
     {
-        //
+        //Methode index pour Produit
+        
     }
 
     /**

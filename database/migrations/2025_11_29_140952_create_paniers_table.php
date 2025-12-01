@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('paniers', function (Blueprint $table) {
             $table->id();
-            $table->$table->boolean('statut')->default(true);
+            $table->boolean('statut')->default(true);
             $table->integer('quantité')->default(0);
-            $table->timestamps('date_creation');
-            
+            $table->timestamps();
+
              // Configuration de la clé étrangere de la table Category.
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

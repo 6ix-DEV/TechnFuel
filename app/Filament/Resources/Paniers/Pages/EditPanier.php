@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Filament\Resources\Paniers\Pages;
+
+use App\Filament\Resources\Paniers\PanierResource;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\ViewAction;
+use Filament\Resources\Pages\EditRecord;
+
+class EditPanier extends EditRecord
+{
+    protected static string $resource = PanierResource::class;
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            ViewAction::make(),
+            DeleteAction::make(),
+        ];
+    }
+}
