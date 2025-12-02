@@ -109,7 +109,7 @@
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" style="transform:translateY(2px);">
         <rect width="24" height="24" rx="6" fill="#2b2bff"/>
       </svg>
-      <div>MAXESPORT</div>
+      <div>TECHNFUEL</div>
     </div>
 
     <div class="search">
@@ -117,7 +117,7 @@
     </div>
 
     <div class="top-actions">
-      <div>🖤 Black Friday</div>
+      <div>🖤 Black</div>
       <div>Nouveautés</div>
       <div>Besoins d'aide ?</div>
       <div>Mon compte</div>
@@ -136,9 +136,9 @@
 
   <!-- Hero/banner -->
   <section class="hero" aria-label="Bannière principale">
-    <h1>Boisson énergisante gamer</h1>
+    <h1>Péripherique - Boisson - Goodies - Stream</h1>
     <div class="hero-image" aria-hidden="true">
-      <img src="https://via.placeholder.com/300x300.png?text=G+FUEL" alt="Produit mis en avant" />
+      <img src="" alt="Produit mis en avant" />
     </div>
   </section>
 
@@ -187,27 +187,25 @@
 
     <!-- Contenu (grille produits) -->
     <main class="content" role="main">
-      <!-- Section: Boissons Énergisantes -->
+      <!-- Section: Boissons Péripherique -->
       <section id="boissons" style="margin-bottom:18px;">
-        <h3 style="font-size:18px; margin-bottom:12px;">Boissons Énergisantes</h3>
+        <h3 style="font-size:18px; margin-bottom:12px;">Péripherique</h3>
         <div class="grid" aria-label="Produits Boissons Énergisantes">
+
           <!-- Carte produit exemple -->
           <article class="card">
-            <img src="https://via.placeholder.com/240x240.png?text=Night+Claw" alt="LEVLUP Night Claw"/>
-            <div class="title">LEVLUP — Night Claw</div>
-            <div class="meta">Hydro Booster — 40 portions</div>
-            <div class="badge">Hydro Booster</div>
+            <img src="" alt="LEVLUP Lemon Line"/>
           </article>
 
           <article class="card">
-            <img src="https://via.placeholder.com/240x240.png?text=Sour+Candy" alt="LEVLUP Sour Candy"/>
+            <img src="" alt="LEVLUP Sour Candy"/>
             <div class="title">LEVLUP — Sour Candy</div>
             <div class="meta">Energy — 30 portions</div>
             <div class="badge">Energy</div>
           </article>
 
           <article class="card">
-            <img src="https://via.placeholder.com/240x240.png?text=Sweet+Candy" alt="LEVLUP Sweet Candy"/>
+            <img src="" alt="LEVLUP Sweet Candy"/>
             <div class="title">LEVLUP — Sweet Candy</div>
             <div class="meta">Energy — 30 portions</div>
             <div class="badge">Energy</div>
@@ -222,9 +220,9 @@
         </div>
       </section>
 
-      <!-- Section: Shakers -->
+      <!-- Section: Boisons -->
       <section id="shakers" style="margin:28px 0;">
-        <h3 style="font-size:18px; margin-bottom:12px;">Shakers</h3>
+        <h3 style="font-size:18px; margin-bottom:12px;">Boissons</h3>
         <div class="grid" aria-label="Shakers">
           <article class="card">
             <img src="https://via.placeholder.com/240x240.png?text=Shaker+Noir" alt="Shaker Noir"/>
@@ -241,6 +239,7 @@
           </article>
 
           <!-- Espaces vides remplacables -->
+          
           <article class="card">
             <img src="https://via.placeholder.com/240x240.png?text=Shaker+3" alt="Shaker 3"/>
             <div class="title">Shaker Gamer</div>
@@ -257,9 +256,9 @@
         </div>
       </section>
 
-      <!-- Section: Compléments Alimentaires Gaming -->
+      <!-- Section: Goodies -->
       <section id="complements" style="margin:28px 0;">
-        <h3 style="font-size:18px; margin-bottom:12px;">Compléments Alimentaires Gaming</h3>
+        <h3 style="font-size:18px; margin-bottom:12px;">Goodies</h3>
         <div class="grid" aria-label="Compléments Alimentaires">
           <article class="card">
             <img src="https://via.placeholder.com/240x240.png?text=Nootropic" alt="Nootropic"/>
@@ -288,6 +287,44 @@
             <div class="meta">Promo limitée</div>
             <div class="badge">Pack</div>
           </article>
+
+          
+        </div>
+      </section>
+
+      <!-- Section: Treaming -->
+      <section id="complements" style="margin:28px 0;">
+        <h3 style="font-size:18px; margin-bottom:12px;">Streaming</h3>
+        <div class="grid" aria-label="Compléments Alimentaires">
+          <article class="card">
+            <img src="https://via.placeholder.com/240x240.png?text=Nootropic" alt="Nootropic"/>
+            <div class="title">Focus Booster — Nootropic</div>
+            <div class="meta">Améliore la concentration</div>
+            <div class="badge">Complément</div>
+          </article>
+
+          <article class="card">
+            <img src="https://via.placeholder.com/240x240.png?text=Electrolyte" alt="Electrolyte"/>
+            <div class="title">Hydrate+ — Electrolytes</div>
+            <div class="meta">Récupération & hydratation</div>
+            <div class="badge">Electrolytes</div>
+          </article>
+
+          <article class="card">
+            <img src="https://via.placeholder.com/240x240.png?text=Protein" alt="Recovery Protein"/>
+            <div class="title">Recovery Protein</div>
+            <div class="meta">Protéines & récupération</div>
+            <div class="badge">Protéine</div>
+          </article>
+
+          <article class="card">
+            <img src="https://via.placeholder.com/240x240.png?text=Pack+Promo" alt="Pack Promo"/>
+            <div class="title">Pack Découverte — 3 saveurs</div>
+            <div class="meta">Promo limitée</div>
+            <div class="badge">Pack</div>
+          </article>
+
+          
         </div>
       </section>
 
