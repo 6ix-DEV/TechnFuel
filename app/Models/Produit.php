@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Produit extends Model
 {
     //Configuration du modele Produit
-    protected $fillable = ['id', 'name', 'description', 'prix','quantité','statut', 'category_id'];
+    protected $fillable = ['name', 'description', 'prix','quantite','statut', 'category_id'];
     //Modèle Produuit Configuré.
 
     //Branches des relations entre les tables

@@ -12,7 +12,9 @@ class ProduitController extends Controller
      */
     public function index()
     {
-        //Methode index pour Produit
+        //Méthode pour récupérer tous les produits et les passer à la vue
+        $produits = Produit::all();
+        return view('produits.index', compact('produits'));
         
     }
 

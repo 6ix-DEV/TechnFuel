@@ -13,15 +13,11 @@ return new class extends Migration
     {
         Schema::create('ligne_de_commandes', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('commande_id');
-            $table->integer('quantité');
+            $table->integer('quantite');
             $table->decimal('prix_unitaire', 8, 2);
+            $table->foreignId('commande_id')->constrained()->onDelete('cascade');//Clé étrangere vers la table Commandes
+            $table->foreignId('produit_id')->constrained()->onDelete('cascade'); //Clé étrangere vers la table Produits
             $table->timestamps();
-            
-            //Clé étrangere vers la table Produits
-            $table->unsignedBigInteger('produit_id');
-            //Clé étrangere vers la table Commandes
-            
         });
     }
 
