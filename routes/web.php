@@ -3,12 +3,17 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProduitController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CategoryController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/produits', [ProduitController::class, 'index'])->name('produits.index');
+Route::get('/produits/category/{category}', [ProduitController::class, 'filtre'])->name('produits.filtre');
+Route::get('/categories', [CategoryController::class, 'index'])->name('cate.index');
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

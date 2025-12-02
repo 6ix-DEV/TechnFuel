@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Produit;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class ProduitController extends Controller
@@ -12,11 +13,36 @@ class ProduitController extends Controller
      */
     public function index()
     {
-        //Méthode pour récupérer tous les produits et les passer à la vue
         $produits = Produit::all();
-        return view('produits.index', compact('produits'));
+        $categories = Category::all();
+        
+        return view('produits.index', compact('produits', 'categories'  ));
+
+
         
     }
+
+    public function filtre(Category $category )
+        {
+            $produits = Produit::where('category_id', $category->id)->get();
+            $categories = Category::all();
+      dd($produits);
+            return view('produits.index', compact('produits', 'categories'  ));
+
+
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      * Show the form for creating a new resource.

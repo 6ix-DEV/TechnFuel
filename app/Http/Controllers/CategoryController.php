@@ -12,7 +12,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        //Methode index pour afficher toutes les categories
+        $categories = Category::all();
+        return view('categories.index', compact('categories'));
     }
 
     /**
